@@ -1,0 +1,57 @@
+{
+  "rules": {
+    "sqlInjection": {
+      "patterns": [
+        "UNION\\s+SELECT",
+        "'\\s*OR\\s*'?\\s*1\\s*=\\s*1",
+        "DROP\\s+TABLE",
+        "DELETE\\s+FROM",
+        "--\\s*$",
+        ";\\s*DROP",
+        "EXEC\\s*\\(",
+        "INFORMATION_SCHEMA"
+      ],
+      "description": "SQL Injection attempts"
+    },
+    "xss": {
+      "patterns": [
+        "<script[^>]*>",
+        "javascript:",
+        "onerror\\s*=",
+        "onload\\s*=",
+        "eval\\s*\\(",
+        "document\\.cookie",
+        "alert\\s*\\(",
+        "<img[^>]+src[^>]*onerror"
+      ],
+      "description": "Cross-Site Scripting (XSS) attempts"
+    },
+    "pathTraversal": {
+      "patterns": [
+        "\\.\\./",
+        "%2e%2e/",
+        "%252e%252e/",
+        "\\\\../",
+        "/etc/passwd",
+        "c:\\\\windows",
+        "\\.\\./windows/",
+        "file:///"
+      ],
+      "description": "Path Traversal attempts"
+    },
+    "commandInjection": {
+      "patterns": [
+        "\\s*;\\s*",
+        "\\|\\|",
+        "&&",
+        "`.*`",
+        "\\$\\(",
+        "\\bping\\b",
+        "\\bnc\\b",
+        "\\bcurl\\b",
+        "\\bwget\\b"
+      ],
+      "description": "Command Injection attempts"
+    }
+  }
+}
