@@ -1,3 +1,7 @@
 {"ip":"::1","url":"/search?q=%3Cscript%3Ealert(1)%3C/script%3E","method":"GET","type":"xss","pattern":"alert\\s*\\(","match":"/search?q=%3Cscript%3Ealert(1)%3C/script%3E","timestamp":"2025-11-01T19:37:19.769Z"}
 {"ip":"::1","url":"/search?q=UNION%20SELECT%20*%20FROM%20users","method":"GET","type":"sqlInjection","pattern":"UNION\\s+SELECT","match":"{\"q\":\"UNION SELECT * FROM users\"}","timestamp":"2025-11-01T19:43:12.563Z"}
 {"ip":"::1","url":"/search?q=;%20ls%20-la","method":"GET","type":"commandInjection","pattern":"\\s*;\\s*","match":"/search?q=;%20ls%20-la","timestamp":"2025-11-01T19:43:36.943Z"}
+{"ip":"::1","url":"/search?q=%3Cscript%3Ealert(1)%3C/script%3E","method":"GET","type":"xss","pattern":"alert\\s*\\(","match":"/search?q=%3Cscript%3Ealert(1)%3C/script%3E","timestamp":"2025-11-02T08:08:08.150Z"}
+{"ip":"::1","url":"/search?q=;%20cat%20/etc/passwd","method":"GET","type":"pathTraversal","pattern":"/etc/passwd","match":"/search?q=;%20cat%20/etc/passwd","timestamp":"2025-11-02T08:09:05.146Z"}
+{"ip":"::1","url":"/search?q=%3Cscript%3Ealert(1)%3C/script%3E","method":"GET","type":"xss","pattern":"alert\\s*\\(","match":"/search?q=%3Cscript%3Ealert(1)%3C/script%3E","timestamp":"2025-11-02T13:24:24.204Z"}
+{"ip":"::1","url":"/search?q=UNION%20SELECT%20*%20FROM%20users","method":"GET","type":"sqlInjection","pattern":"UNION\\s+SELECT","match":"{\"q\":\"UNION SELECT * FROM users\"}","timestamp":"2025-11-02T13:24:53.970Z"}

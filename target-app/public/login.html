@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Page - AppShield</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      height: 100vh;
+      /* Changed to a very light, off-white background */
+      background: #f8f9fa;
+      display: flex;
+      /* Fixed align: center; to align-items: center; */
+      align-items: center;
+      justify-content: center;
+    }
+
+    .container {
+      background: #ffffff; /* Pure white container */
+      padding: 40px 50px;
+      border-radius: 12px; /* Slightly softer radius */
+      /* Softer shadow + a light border for definition */
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.05);
+      border: 1px solid #e9ecef;
+      text-align: center;
+      width: 90%;
+      max-width: 400px;
+    }
+
+    h1 {
+      /* Changed to a professional corporate blue */
+      color: #2c2c2c;
+      margin-bottom: 25px;
+      font-size: 1.8rem;
+    }
+
+    p {
+      /* Changed to a standard dark grey for text */
+      color: #495057;
+      margin-bottom: 20px;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    input {
+      padding: 12px;
+      /* Standard, thinner border */
+      border: 1px solid #ced4da;
+      border-radius: 8px;
+      font-size: 1rem;
+      transition: border 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    input:focus {
+      outline: none;
+      /* Changed focus color to the new primary blue */
+      border-color: #353535;
+      /* Added a subtle glow shadow for focus, very professional */
+      box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+    }
+
+    button {
+      /* Changed button color to the new primary blue */
+      background: #2f2f2f;
+      color: white;
+      padding: 12px;
+      border: none;
+      border-radius: 10px;
+      font-size: 1rem;
+      font-weight: 500;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    button:hover {
+      /* Darker blue on hover */
+      background: #323232;
+      transform: translateY(-2px);
+      /* Shadow to match the blue theme */
+      box-shadow: 0 5px 15px rgba(0, 123, 255, 0.3);
+    }
+
+    a {
+      display: inline-block;
+      margin-top: 15px;
+      text-decoration: none;
+      /* Link color to match the primary blue */
+      color: #282828;
+      font-weight: 500;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Login Page</h1>
+    <p>This is a dummy login page for WAF testing.</p>
+    
+    <form>
+      <input type="text" placeholder="Username" required />
+      <input type="password" placeholder="Password" required />
+      <button type="submit">Login</button>
+    </form>
+
+    <a href="/">← Back to Home</a>
+  </div>
+</body>
+</html>

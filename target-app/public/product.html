@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Page - AppShield</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      height: 100vh;
+      /* Changed to the light, off-white background */
+      background: #f8f9fa;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .container {
+      /* Applied the same white, bordered, and shadowed style */
+      background: #ffffff;
+      padding: 40px 50px;
+      border-radius: 12px;
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.05);
+      border: 1px solid #e9ecef;
+      text-align: center;
+      width: 90%;
+      max-width: 450px;
+    }
+
+    h1 {
+      /* Changed to the professional corporate blue */
+      color: #323232;
+      margin-bottom: 20px;
+      font-size: 1.8rem;
+    }
+
+    p {
+      /* Changed to a standard dark grey for text */
+      color: #495057;
+      margin-bottom: 30px;
+    }
+
+    .product-card {
+      /* Updated card to fit the minimal theme */
+      border: 1px solid #dee2e6; /* Lighter, cleaner border */
+      border-radius: 12px; /* Consistent radius */
+      padding: 20px;
+      background: #f8f9fa; /* Light bg to separate from white container */
+      box-shadow: none; /* Removed shadow for a flatter, modern look */
+    }
+
+    .product-name {
+      font-size: 1.3rem;
+      font-weight: 600;
+      /* Changed to the professional corporate blue */
+      color: #353535;
+      margin-bottom: 10px;
+    }
+
+    .product-desc {
+      font-size: 1rem;
+      /* Changed to a standard dark grey for text */
+      color: #495057;
+      margin-bottom: 15px;
+    }
+
+    .price {
+      font-size: 1.2rem;
+      font-weight: 600;
+      color: #7a7a7a; /* Kept green for price, as it's standard */
+    }
+
+    a {
+      display: inline-block;
+      margin-top: 25px;
+      text-decoration: none;
+      color: white;
+      /* Changed button color to the new primary blue */
+      background: #222222;
+      padding: 10px 18px;
+      border-radius: 10px;
+      transition: all 0.3s ease;
+    }
+
+    a:hover {
+      /* Darker blue on hover */
+      background: #292929;
+      transform: translateY(-2px);
+      /* Shadow to match the blue theme */
+      box-shadow: 0 5px 15px rgba(0, 123, 255, 0.3);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Product Page</h1>
+    <p>This is a dummy product page for WAF testing.</p>
+
+    <div class="product-card">
+      <div class="product-name">Product ID: 123</div>
+      <div class="product-desc">This is a sample product used to demonstrate WAF filtering.</div>
+      <div class="price">$49.99</div>
+    </div>
+
+    <a href="/">← Back to Home</a>
+  </div>
+</body>
+</html>

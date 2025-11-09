@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Search Page - AppShield</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      height: 100vh;
+      /* Changed to the light, off-white background */
+      background: #f8f9fa;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .container {
+      /* Applied the same white, bordered, and shadowed style */
+      background: #ffffff;
+      padding: 40px 50px;
+      border-radius: 12px;
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.05);
+      border: 1px solid #e9ecef;
+      text-align: center;
+      width: 90%;
+      max-width: 450px;
+    }
+
+    h1 {
+      /* Changed to the professional corporate blue */
+      color: #363636;
+      margin-bottom: 20px;
+      font-size: 1.8rem;
+    }
+
+    p {
+      /* Changed to a standard dark grey for text */
+      color: #495057;
+      margin-bottom: 25px;
+    }
+
+    form {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+    }
+
+    input[type="text"] {
+      padding: 12px;
+      width: 70%;
+      /* Standard, thinner border */
+      border: 1px solid #ced4da;
+      border-radius: 8px;
+      font-size: 1rem;
+      transition: border 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    input[type="text"]:focus {
+      outline: none;
+      /* Changed focus color to the new primary blue */
+      border-color: #3b3b3b;
+      /* Added a subtle glow shadow for focus */
+      box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+    }
+
+    button {
+      /* Changed button color to the new primary blue */
+      background: #2a2a2a;
+      color: white;
+      padding: 12px 18px;
+      border: none;
+      border-radius: 8px;
+      font-size: 1rem;
+      font-weight: 500;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    button:hover {
+      /* Darker blue on hover */
+      background: #2f2f2f;
+      transform: translateY(-2px);
+      /* Shadow to match the blue theme */
+      box-shadow: 0 5px 15px rgba(0, 123, 255, 0.3);
+    }
+
+    .results {
+      margin-top: 25px;
+      /* Matched border color to the container border */
+      border-top: 1px solid #e9ecef;
+      padding-top: 15px;
+      /* Matched text color to other paragraph text */
+      color: #495057;
+    }
+
+    a {
+      display: inline-block;
+      margin-top: 20px;
+      text-decoration: none;
+      /* Changed link color to the new primary blue */
+      color: #292929;
+      font-weight: 500;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Search Page</h1>
+    <p>This is a dummy search page for WAF testing.</p>
+
+    <form action="/search" method="get">
+      <input type="text" name="q" placeholder="Type something to search..." required />
+      <button type="submit">Search</button>
+    </form>
+
+    <div class="results">
+      <p>Search results will appear here (dummy content for testing).</p>
+    </div>
+
+    <a href="/">← Back to Home</a>
+  </div>
+</body>
+</html>

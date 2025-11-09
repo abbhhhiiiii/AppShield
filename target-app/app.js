@@ -1,33 +1,33 @@
 const express = require("express");
+const path = require("path");
 const app = express();
 const PORT = 4001;
 
 app.use(express.json());
 
+// Serve static files from "public" folder
+app.use(express.static(path.join(__dirname, "public")));
+
 // Login route
-app.post("/login", (req, res) => {
-  const { username, password } = req.body;
-  res.json({ message: "Login endpoint (for testing)" });
+app.get("/login", (req, res) => {
+  res.sendFile(path.join(__dirname, "public", "login.html"));
 });
 
 // Search route
 app.get("/search", (req, res) => {
-  const { q } = req.query;
-  res.json({
-    message: "Search endpoint (for testing)",
-    query: q,
-  });
+  res.sendFile(path.join(__dirname, "public", "search.html"));
 });
 
 // Product route
 app.get("/product/:id", (req, res) => {
-  const { id } = req.params;
-  res.json({
-    message: "Product endpoint (for testing)",
-    id: id,
-  });
+  res.sendFile(path.join(__dirname, "public", "product.html"));
+});
+
+// Default route
+app.get("/", (req, res) => {
+  res.sendFile(path.join(__dirname, "public", "index.html"));
 });
 
 app.listen(PORT, () => {
-  console.log(`Target app running on port ${PORT}`);
+  console.log(`✅ Target app running on http://localhost:${PORT}`);
 });

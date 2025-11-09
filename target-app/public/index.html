@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home - AppShield Test App</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      height: 100vh;
+      /* Changed to the light, off-white background */
+      background: #f8f9fa;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .container {
+      /* Applied the same white, bordered, and shadowed style */
+      background: #ffffff;
+      padding: 40px 50px;
+      border-radius: 12px;
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.05);
+      border: 1px solid #e9ecef;
+      text-align: center;
+      width: 90%;
+      max-width: 500px; /* Kept 500px as it's a home page */
+    }
+
+    h1 {
+      /* Changed to the professional corporate blue */
+      color: #383838;
+      font-size: 1.8rem;
+      margin-bottom: 20px;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    li {
+      margin: 15px 0;
+    }
+
+    a {
+      display: block;
+      text-decoration: none;
+      color: white;
+      /* Changed button color to the new primary blue */
+      background: rgb(41, 41, 41);
+      padding: 12px;
+      border-radius: 10px;
+      font-size: 1.1rem;
+      font-weight: 500;
+      transition: all 0.3s ease;
+    }
+
+    a:hover {
+      /* Darker blue on hover */
+      background: #353535;
+      transform: translateY(-2px);
+      /* Shadow to match the blue theme */
+      box-shadow: 0 5px 15px rgba(66, 66, 66, 0.3);
+    }
+
+    footer {
+      margin-top: 25px;
+      font-size: 0.9rem;
+      /* Changed to a standard dark grey for text */
+      color: #495057;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Welcome to AppShield Target Application</h1>
+    <ul>
+      <li><a href="/login">Login Page</a></li>
+      <li><a href="/search?q=example">Search Page</a></li>
+      <li><a href="/product/123">Product Page</a></li>
+    </ul>
+    <footer>AppShield © 2025</footer>
+  </div>
+</body>
+</html>
